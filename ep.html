@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PodCamões-Episódios</title>
+  <link rel="stylesheet" href="ep.css">
+  <link rel="icon" href="imagens/logopod-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="imagens/logopod-removebg-preview.png" alt="Logo do Podcast">
+    </div>
+    <nav>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="ep.html">Episódios</a>
+        <a href="contacto.html">Contato</a>
+        <a href="jogos.html">Jogos</a>
+      </div>
+      <div class="burger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <br><br><br><br><br>
+  <!-- Menu Overlay (invisível até ativado) -->
+  <div class="menu-overlay">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="ep.html">Episódios</a>
+      <a href="contacto.html">Contato</a>
+      <a href="jogos.html">Jogos</a>
+    </nav>
+    <button class="close-btn" onclick="closeMenu()">×</button>
+  </div>
+
+  <!-- Seção de Episódios -->
+  <section class="ep-section">
+    <h1>Episódios Disponíveis</h1>
+    <div class="ep-content">
+      <!-- Card do episódio -->
+      <div class="ep-card">
+        <img src="https://img.youtube.com/vi/VIul9SFTcWQ/0.jpg" alt="Capa do vídeo">
+        <div class="ep-card-content">
+          <div class="ep-card-title">EP 1: Vai chatear o Camões!</div>
+          <div class="ep-card-description"></div>
+          <a href="https://youtu.be/VIul9SFTcWQ?si=-ApZeutltr0TvClK" target="_blank">Ver no YouTube</a>
+        </div>
+      </div>
+      <div class="ep-card">
+        <img src="https://img.youtube.com/vi/KCHXgNTO5uA/0.jpg" alt="Capa do vídeo">
+        <div class="ep-card-content">
+          <div class="ep-card-title">EP 2: Não ouses chatear o Camões!</div>
+          <div class="ep-card-description"></div>
+          <a href="https://youtu.be/KCHXgNTO5uA?si=HzFDWd7eGv2Qoo5O" target="_blank">Ver no YouTube</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- Link para o JS -->
+</body>
+</html>

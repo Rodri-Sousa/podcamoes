@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PodCamões</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" href="imagens/logopod-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="imagens/logopod-removebg-preview.png" alt="Logo do Podcast" width="70px">
+    </div>
+    <nav>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="ep.html">Episódios</a>
+        <a href="contacto.html">Contato</a>
+        <a href="jogos.html">Jogos</a>
+      </div>
+      <div class="burger" onclick="toggleMenu()">☰
+        <div class="menu-overlay">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="ep.html">Episódios</a>
+            <a href="contacto.html">Contato</a>
+            <a href="jogos.html">Jogos</a> 
+          </nav>
+          <button class="close-btn" onclick="closeMenu()">×</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ 
+
+
+  <br><br><br><br><br>
+
+  <!-- Seção do Podcast -->
+  <section class="podcast-section">
+    <div class="podcast-content">
+      <h1>Bem-vindo ao site do PodCamões!</h1>
+      <p>Vem conhecer o nosso podcast sobre Camões! 
+        Descobre histórias incríveis, curiosidades e a obra do Poeta que marcou Portugal.
+        </p>
+      <a href="ep.html" class="btn-listen">Ver Agora</a>
+    </div>
+    <div class="podcast-image">
+      <img src="imagens/logopod-removebg-preview.png" alt="Imagem do Podcast">
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Menu Overlay -->
+  <div class="menu-overlay">
+    <button class="close-btn" onclick="closeMenu()">X</button>
+    <nav>
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">Sobre</a>
+      <a href="#episodes" onclick="closeMenu()">Episódios</a>
+      <a href="#contact" onclick="closeMenu()">Contato</a>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
